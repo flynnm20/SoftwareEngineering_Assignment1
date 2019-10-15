@@ -95,6 +95,11 @@ public class dag {
         //		add this node to bag
         //}
 
+    	// check if the answer is valid or not
+    	if(this == null || this.V == 1) return null; // return null if dag not initilized or there is only one value
+    	
+    	
+    	
         ArrayList<Integer> lcas = new ArrayList<Integer>();
         int currentMaxDist = Integer.MAX_VALUE;
 
