@@ -96,14 +96,11 @@ public class dag {
         //}
 
     	// check if the answer is valid or not
-    	if(this == null || this.V == 1) return null; // return null if dag not initilized or there is only one value
-    	
     	
     	
         ArrayList<Integer> lcas = new ArrayList<Integer>();
         int currentMaxDist = Integer.MAX_VALUE;
-
-
+        
         if(x==y || x>=this.V || y>=this.V || x<0 || y<0) { return lcas; } //If invalid input return empty bag.
 
         DirectedDFS dfsObject = new DirectedDFS(this, x);
