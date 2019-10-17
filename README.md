@@ -4,6 +4,7 @@ Construction of BST and Nodes.
 The tree can be defined with no parameter. Then you can define a root node and define left and right branches for that node manually. 
 
 LCA:
+The LCA function first checks if the 2 elements exist in the BST. If they aren't -1 is returned. Then goes through the nodes in each path until it finds a node which is used in both paths. This then becomes the LCA.  
 
 
 Testing of Code:
